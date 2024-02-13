@@ -5,6 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+      user: chandanteekinavar
     ports:
       - "5000:5000"
     environment:
@@ -16,6 +17,7 @@ services:
     build:
       context: ./my-hotel 
       dockerfile: Dockerfile
+      user: chandanteekinavar
     ports:
       - "3000:3000"
 
