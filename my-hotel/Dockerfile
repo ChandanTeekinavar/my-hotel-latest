@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Adjust file permissions for react-scripts
+RUN chmod +x node_modules/.bin/react-scripts
+
 # Copy the rest of the application code to the container
 COPY . .
 
