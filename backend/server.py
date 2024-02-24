@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:admin123@database-1.cslawiqjy7my.ap-south-1.rds.amazonaws.com:3306/myHotel'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:admin123@database-2.c3i6s0isi9se.eu-west-1.rds.amazonaws.com:3306/myHotel'
 db = SQLAlchemy(app)
 
 class Booking(db.Model):
